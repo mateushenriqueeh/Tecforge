@@ -1,0 +1,237 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color:white;
+    background: #040314;
+    padding-top: 100px;
+    
+
+}
+
+.header{
+    background: #1e1e1e;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.header .header-logo img{
+    width: 200px;
+    margin-left: 10%;
+}
+
+.header .header-menu {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #ccc;
+    text-decoration: none;
+    float: right; 
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+.header .header-nav ul li{
+    margin: 15px;
+}
+
+.header .header-nav ul li a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+.header .header-nav ul {
+    list-style: none;
+}
+
+.header .header-nav {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    height: 100vh;
+    padding: 0px 2%;
+}
+
+.caixa {
+    width: 42%; /* Cada caixa ocupa 50% da largura da tela */
+    max-height: 60%; /* Altura de exemplo */
+    /* border: 1px solid #ff0101;  Adicionando uma borda preta para visualização */
+    color: white;
+}
+
+.caixa img{
+    animation: blink 3s infinite; /* A animação irá durar 1 segundo e repetirá infinitamente */
+}
+
+
+.caixa h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    color: #00ff21;
+    
+}
+
+.caixa h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    
+
+        
+}
+
+.caixa p{
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 4rem;
+    text-align: justify;
+}
+
+
+.caixa img{
+    width: 120%;
+}
+
+.btn {
+    background-color: #00ff21;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para a classe .Sobre */
+.Sobre {
+    margin-bottom: 20px;
+}
+
+/* Estilos para o título <h2> dentro de .Sobre */
+.Sobre h2 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para os parágrafos dentro de .Sobre */
+.Sobre p {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para os links dentro de .Sobre */
+.Sobre a {
+    color: #007bff; /* Azul */
+    text-decoration: none;
+}
+
+/* Estilos para links quando estão em hover */
+.Sobre a:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Aplicando a animação ao texto desejado */
+
+
+.contact{
+    align-items: center;
+}
+
+
+.contact-toggle:checked + .contact-label + .contact-content {
+    transform: translateX(0);
+}
+
+.contact-tab h2 {
+    margin-bottom: 10px;
+    
+}
+
+form {
+    max-width: 400px;
+    padding: 5%;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+@media (min-width: 460px){
+
+    .header .header-menu{
+        display: none;
+    }
+
+    .header .header-nav{
+        display: block;
+    }
+
+    .header .header-nav {
+        float: right;
+        margin-top: 15px;
+        margin-right: 40px;
+        font-size: 20px;
+        
+    }
+
+    .header .header-nav ul li{
+        display: inline-block;
+    }
+
+
+
+    
+
+
+}
